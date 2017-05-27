@@ -1,0 +1,1 @@
+execute the _build.sh_ to compile the less, and compress the javascript files.

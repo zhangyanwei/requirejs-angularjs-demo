@@ -1,0 +1,7 @@
+<div class="alert-stack-box">
+    <div mid="{{message._id}}" class="alert alert-{{::message.type}}" ng-repeat="message in messages track by $index">
+        <button ng-if="manualClose" type="button" class="close" aria-hidden="true" ng-click="close(message._id)">×</button>
+        <h4 ng-if="message.title"><i class="icon fa fa-ban"></i>{{::message.title}}</h4>
+        {{::message.content}}
+    </div>
+</div>
